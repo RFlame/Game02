@@ -1,5 +1,6 @@
 ﻿import HUD from "../UI/HUD";
 import GamePlayManager from "./GamePlayManager";
+import Product from "./Product";
 
 enum GameState {
     INIT,
@@ -41,7 +42,7 @@ export default class PlayerModuleC extends ModuleC<null, null> {
     }
 
     //获取桌面商品列表
-    getTableProductList(): GameObject[]  {
+    getTableProductList(): Product[]  {
         return this.gamePlayManager.getTableProductList();
     }
 
